@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="HandheldFriendly" content="true" />
+        <title>Random Movie</title>
+        <link rel='apple-touch-icon' href='icon.png'  />
+		<link rel='shortcut icon' href='icon.png' type='image/png'/>
+		<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/styles.css" />
+        <link type="text/css" rel="stylesheet" href="css/loader.css" />
+    </head>
+
+    <body>
+        <div class="flex-container">
+            <h1>Plex Media Randomizer</h1>
+            <div class="generate-container">
+                <div class="thumb"><i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i></div>
+                <div class="header"></div>
+            </div>
+
+            <div class="switch-container">
+                <input type="checkbox" id="mediaType">
+                <div class="label"><div class="l">TV</div><div class="r">Films</div></div>
+                <label></label>
+            </div>
+
+            <div class="settings"><i class="fa fa-cog" aria-hidden="true"></i></div>
+
+            <div class="settings-container">
+                <div class="modal success"><i class="fa fa-check" aria-hidden="true"></i> Saved</div>
+                <div class="modal">
+                    <div class="header">
+                        <div class="title">Settings</div>
+                        <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="content">
+                        <input type="text" id="ip" > :
+                        <input type="text" id="port" >
+                        
+                        <button id="save">Save</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="loading"><i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i></div>
+                <div class="header">
+                    <div class="title"></div>
+                    <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+                </div>
+                <div class="split">
+                    <div class="movie-poster"><img alt="movie-poster" src="#" /></div>
+                    <div class="content">
+                        <div class="meta">
+                            <span class="content-rating"></span>
+                            <span class="year"></span> ‧
+                            <span class="duration"></span>
+                        </div>
+                        <div class="summary">
+                            <strong>Summary:</strong><br>
+
+                        </div>
+                        <div class="refresh -d"><i class="fa fa-refresh" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div class="refresh -m"><i class="fa fa-refresh" aria-hidden="true"></i></div>
+            </div>
+        </div>
+        <div class="footer">made by <a href="http://www.mykola-designs.co.uk/" target="_blank">mykola senechyn</a></div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/settings.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
