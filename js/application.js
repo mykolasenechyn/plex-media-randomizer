@@ -2,7 +2,7 @@
 
     window.Application = function(params){
         var app = this;
-		app.name = 'p1';
+	app.name = 'plexrandom';
         app.version = '1.1';
 
 		// Application parameters
