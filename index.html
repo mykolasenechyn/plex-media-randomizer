@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="HandheldFriendly" content="true" />
-        <title>Random Movie</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="crimson" />
+        <title>Plex Media Randomizer</title>
         <link rel='apple-touch-icon' href='icon.png'  />
 		<link rel='shortcut icon' href='icon.png' type='image/png'/>
 		<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
@@ -16,11 +18,11 @@
             <h1>Plex Media Randomizer</h1>
             <div class="generate-container">
                 <div class="thumb"><i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i></div>
-                <div class="header"></div>
+                <div class="header">123</div>
             </div>
 
             <div class="switch-container">
-                <input type="checkbox" id="mediaType">
+                <input type="checkbox" id="media-type">
                 <div class="label"><div class="l">TV</div><div class="r">Films</div></div>
                 <label></label>
             </div>
@@ -35,8 +37,8 @@
                         <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>
                     </div>
                     <div class="content">
-                        <input type="text" id="ip" > :
-                        <input type="text" id="port" >
+                        <input type="text" id="ip" placeholder="plex ip"> :
+                        <input type="text" id="port" placeholder="plex port" >
                         
                         <button id="save">Save</button>
                     </div>
@@ -69,7 +71,9 @@
         </div>
         <div class="footer">made by <a href="http://www.mykola-designs.co.uk/" target="_blank">mykola senechyn</a></div>
         <script src="js/jquery.min.js"></script>
-        <script src="js/settings.js"></script>
-        <script src="js/app.js"></script>
+        <script src="js/application.js"></script>
+		<script>
+			var  plex = new Application();
+		</script>
     </body>
 </html>
