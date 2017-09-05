@@ -125,7 +125,7 @@
 				$.ajax({
 				type: "GET",
 				dataType: "xml",
-				url: "https://"+app.savedata.plex_ip+":"+app.savedata.plex_port+"/library/sections/"+section_key+"/all",
+				url: "http://"+app.savedata.plex_ip+":"+app.savedata.plex_port+"/library/sections/"+section_key+"/all",
 				success: function(xml){
 					$(xml).find(tag_id).each(function(){
 						if(media_type === 'movies'){
@@ -216,7 +216,7 @@
 			}
 
 			$('.container .header .title').html(f.title);
-			$('img').attr('src','https://'+app.savedata.plex_ip+':'+app.savedata.plex_port+'/library/metadata/'+f.id+'/thumb').load(function(){ $('.flex-container .container .loading').fadeOut(); });
+			$('img').attr('src','http://'+app.savedata.plex_ip+':'+app.savedata.plex_port+'/library/metadata/'+f.id+'/thumb').load(function(){ $('.flex-container .container .loading').fadeOut(); });
 			$('.content-rating').html(f.cr);
 			$('.year').html(f.year);
 			$('.duration').html(d.h+'h '+d.m+'m');
